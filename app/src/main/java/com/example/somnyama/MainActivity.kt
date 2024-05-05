@@ -3,6 +3,7 @@ package com.example.somnyama
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,7 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btnOne: Button
+    private lateinit var playBtn: Button
+    private lateinit var welcomeIV: ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +20,10 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        btnOne = findViewById(R.id.btnOne)
+        playBtn = findViewById(R.id.playBtn)
+        welcomeIV = findViewById(R.id.welcomeIV)
 
-        btnOne.setOnClickListener {
+        playBtn.setOnClickListener {
 
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)

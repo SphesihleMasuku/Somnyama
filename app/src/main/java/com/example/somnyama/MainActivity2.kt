@@ -51,6 +51,7 @@ class MainActivity2 : AppCompatActivity() {
             progressBarB.incrementProgressBy( 25)
             imageView.setImageResource(R.drawable.ani_dogbath)
 
+
         }
 
         playBtn.setOnClickListener {
